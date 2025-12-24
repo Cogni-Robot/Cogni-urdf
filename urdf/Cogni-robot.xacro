@@ -1,0 +1,988 @@
+<?xml version="1.0" ?>
+<robot name="Cogni-robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Cogni-robot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Cogni-robot_description)/urdf/Cogni-robot.trans" />
+<xacro:include filename="$(find Cogni-robot_description)/urdf/Cogni-robot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.1219501603328655e-05 -0.05652645349282051 -0.007126953017833521" rpy="0 0 0"/>
+    <mass value="1.2458370682377469"/>
+    <inertia ixx="0.002516" iyy="0.00237" izz="0.002929" ixy="-7.5e-05" iyz="0.000124" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1_1">
+  <inertial>
+    <origin xyz="2.4590533479708028e-05 0.013876940357002876 0.018114364058204026" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.9e-05" iyy="5.8e-05" izz="9.2e-05" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-2e-06 0.064517 -0.050918" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-2e-06 0.064517 -0.050918" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="double_rotation_link_double_feetech_v1_1">
+  <inertial>
+    <origin xyz="0.002024750176840232 0.003710607069467957 -0.008500173682925022" rpy="0 0 0"/>
+    <mass value="0.010490141865992935"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.013856 0.050688 -0.138396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.013856 0.050688 -0.138396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="double_rotation_link_double_feetech_v1__1__1">
+  <inertial>
+    <origin xyz="-0.0020246958284255816 0.003710607069468068 0.008499821732979834" rpy="0 0 0"/>
+    <mass value="0.010490141865992935"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.016125 0.050688 -0.121396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.016125 0.050688 -0.121396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__2__1">
+  <inertial>
+    <origin xyz="-0.014980074180713072 0.016417183569695955 0.01679119183449934" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.9e-05" iyy="9.2e-05" izz="5.8e-05" ixy="-0.0" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.013756 0.043788 -0.121396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.013756 0.043788 -0.121396" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="chest_1">
+  <inertial>
+    <origin xyz="0.0017826415962840523 -0.03577287736870712 0.04770661560159359" rpy="0 0 0"/>
+    <mass value="0.5907354450700422"/>
+    <inertia ixx="0.000784" iyy="0.001095" izz="0.001455" ixy="-1e-06" iyz="-1.5e-05" ixz="2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.001248 0.009256 -0.12431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.001248 0.009256 -0.12431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__3__1">
+  <inertial>
+    <origin xyz="-0.01077308895703491 0.13907074034428557 0.12394977494486209" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.2e-05" iyy="5.8e-05" izz="9.9e-05" ixy="1e-06" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.070938 0.195769 -0.049838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.070938 0.195769 -0.049838" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__4__1">
+  <inertial>
+    <origin xyz="0.01725059524034419 0.14410574034429674 0.12295290509015946" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.2e-05" iyy="5.8e-05" izz="9.9e-05" ixy="-1e-06" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.07649 0.200804 -0.05487" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.07649 0.200804 -0.05487" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215-2_1">
+  <inertial>
+    <origin xyz="0.01080377387017686 0.004721873144410228 0.016041191549275413" rpy="0 0 0"/>
+    <mass value="0.2747881442151801"/>
+    <inertia ixx="7.1e-05" iyy="3.8e-05" izz="6e-05" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.009902 0.061695 -0.172159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.009902 0.061695 -0.172159" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="neck_v2_1">
+  <inertial>
+    <origin xyz="0.0011067108619048087 -7.796325199518894e-05 0.010446641628047398" rpy="0 0 0"/>
+    <mass value="0.056145921126082916"/>
+    <inertia ixx="7e-06" iyy="2.5e-05" izz="2.2e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.001523 0.069995 -0.206389" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.001523 0.069995 -0.206389" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo-sts3215-2_1">
+  <inertial>
+    <origin xyz="-0.018247862675479898 0.011480432576153853 0.006002529329745765" rpy="0 0 0"/>
+    <mass value="0.2747881442151801"/>
+    <inertia ixx="6e-05" iyy="4.3e-05" izz="6.5e-05" ixy="1e-06" iyz="-1.2e-05" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02002 0.069507 -0.225803" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02002 0.069507 -0.225803" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_back_v2_1">
+  <inertial>
+    <origin xyz="-0.2412539502615543 0.06385288729086241 -0.00924470605963662" rpy="0 0 0"/>
+    <mass value="0.5424516303112991"/>
+    <inertia ixx="0.000841" iyy="0.001374" izz="0.001028" ixy="-1.8e-05" iyz="-8.9e-05" ixz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.242449 0.096924 -0.276473" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.242449 0.096924 -0.276473" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="head_face_v1_1">
+  <inertial>
+    <origin xyz="-0.0013476295627852775 -0.028179818730380383 -0.05660827912780514" rpy="0 0 0"/>
+    <mass value="0.3123301638656947"/>
+    <inertia ixx="0.000532" iyy="0.001043" izz="0.00067" ixy="-1.4e-05" iyz="-9.1e-05" ixz="7e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.003672 0.059868 -0.318657" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.003672 0.059868 -0.318657" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shoulder_right_v1_1">
+  <inertial>
+    <origin xyz="-0.013010640630053832 0.007820696038384783 0.001876770495154445" rpy="0 0 0"/>
+    <mass value="0.0899660706083263"/>
+    <inertia ixx="3.4e-05" iyy="2.1e-05" izz="3.9e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.077342 0.070575 -0.178465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.077342 0.070575 -0.178465" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__5__1">
+  <inertial>
+    <origin xyz="-0.0004493364601803884 0.01811472819165904 -0.013869550088784072" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.8e-05" iyy="9.2e-05" izz="5.8e-05" ixy="0.0" iyz="1e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.107415 0.080543 -0.179483" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.107415 0.080543 -0.179483" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_connector_Feetech_v1_1">
+  <inertial>
+    <origin xyz="-0.07342225703569319 0.14467126912105122 0.0765754019276731" rpy="0 0 0"/>
+    <mass value="0.05074794859181044"/>
+    <inertia ixx="1e-05" iyy="9e-06" izz="1.7e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.035311 0.203672 -0.064265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.035311 0.203672 -0.064265" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__6__1">
+  <inertial>
+    <origin xyz="-0.0005937335851529529 -0.013877229014639746 -0.018105031047017148" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.8e-05" iyy="5.8e-05" izz="9.2e-05" ixy="-0.0" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.109022 0.051071 -0.135327" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.109022 0.051071 -0.135327" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_arm_double_right_v1_1">
+  <inertial>
+    <origin xyz="-0.07048560363101748 0.12362337821694852 -0.15912649086596642" rpy="0 0 0"/>
+    <mass value="0.13694142926786174"/>
+    <inertia ixx="0.000183" iyy="0.00017" izz="8.5e-05" ixy="0.0" iyz="6e-06" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.040062 0.187736 -0.245629" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.040062 0.187736 -0.245629" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__7__1">
+  <inertial>
+    <origin xyz="0.012968711938124683 0.015020258661271671 -0.01766175475530777" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.2e-05" iyy="9.9e-05" izz="5.8e-05" ixy="0.0" iyz="0.0" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.126798 0.076307 -0.059989" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.126798 0.076307 -0.059989" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="avant_bras_right_v1_1">
+  <inertial>
+    <origin xyz="0.013511651438376737 -0.04401271311964001 -0.00911675708251809" rpy="0 0 0"/>
+    <mass value="0.18662199745727184"/>
+    <inertia ixx="0.000295" iyy="7.3e-05" izz="0.000311" ixy="-3.4e-05" iyz="2.9e-05" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.132407 0.061311 -0.029076" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.132407 0.061311 -0.029076" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__8__1">
+  <inertial>
+    <origin xyz="0.016319230346371935 -0.01497972224918151 -0.01412912211415315" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="5.8e-05" iyy="9.9e-05" izz="9.2e-05" ixy="0.0" iyz="-0.0" ixz="2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.140609 0.15136 -0.040303" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.140609 0.15136 -0.040303" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Prehenseur_fifty_fifty_Pousse_right_v1_1">
+  <inertial>
+    <origin xyz="-0.06904475940938429 -0.18386469297812502 -0.037759423198110056" rpy="0 0 0"/>
+    <mass value="0.21023886280433182"/>
+    <inertia ixx="0.000118" iyy="2.9e-05" izz="9.5e-05" ixy="3e-06" iyz="0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.024084 0.008504 -0.061118" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.024084 0.008504 -0.061118" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Prehenseur_fifty_fifty_Main_right_v1_1">
+  <inertial>
+    <origin xyz="-0.006502386032642776 -0.036316324095961305 -0.018235812535359403" rpy="0 0 0"/>
+    <mass value="0.2802698772366261"/>
+    <inertia ixx="0.000166" iyy="7.9e-05" izz="0.000109" ixy="8e-06" iyz="-1e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.137541 0.166364 -0.044751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.137541 0.166364 -0.044751" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="shoulder_left_v1_1">
+  <inertial>
+    <origin xyz="0.01307178096322359 0.007943310965193753 -0.00014751072242086272" rpy="0 0 0"/>
+    <mass value="0.08997068728227473"/>
+    <inertia ixx="3.4e-05" iyy="2.1e-05" izz="3.9e-05" ixy="-0.0" iyz="3e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.078268 0.070575 -0.173146" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.078268 0.070575 -0.173146" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__9__1">
+  <inertial>
+    <origin xyz="-0.0004864528785579053 0.015943190059671195 -0.016317909047980333" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.8e-05" iyy="9.1e-05" izz="5.8e-05" ixy="-0.0" iyz="-4e-06" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.108389 0.080441 -0.173536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.108389 0.080441 -0.173536" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_connector_Feetech_v1__1__1">
+  <inertial>
+    <origin xyz="-0.08572533292344034 0.11967437414647482 -0.14092597395843778" rpy="0 0 0"/>
+    <mass value="0.05074794859181044"/>
+    <inertia ixx="1e-05" iyy="9e-06" izz="1.7e-05" ixy="0.0" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.192834 0.184325 -0.273133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.192834 0.184325 -0.273133" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__10__1">
+  <inertial>
+    <origin xyz="-0.0011921428477437573 -0.016307607751101592 -0.015917331175660257" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.8e-05" iyy="5.8e-05" izz="9.1e-05" ixy="-2e-06" iyz="4e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.106802 0.057592 -0.125616" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.106802 0.057592 -0.125616" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="upper_arm_double_right_v1__1__1">
+  <inertial>
+    <origin xyz="-0.09996931108575265 -0.1368731153853111 -0.13422874649333177" rpy="0 0 0"/>
+    <mass value="0.13694142926786174"/>
+    <inertia ixx="0.000183" iyy="0.00017" izz="8.5e-05" ixy="-1e-06" iyz="-6e-06" ixz="-2e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.204801 -0.059398 -0.213401" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.204801 -0.059398 -0.213401" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__11__1">
+  <inertial>
+    <origin xyz="-0.014664973055929259 -0.01108043579565339 -0.02171083068452396" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.2e-05" iyy="9.8e-05" izz="5.9e-05" ixy="0.0" iyz="-6e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.119726 0.071384 -0.056855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.119726 0.071384 -0.056855" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="avant_bras_left_1">
+  <inertial>
+    <origin xyz="-0.016164747662226933 -0.044021818559153714 -0.0018828679961428868" rpy="0 0 0"/>
+    <mass value="0.186625466869739"/>
+    <inertia ixx="0.000298" iyy="8.2e-05" izz="0.000299" ixy="2.5e-05" iyz="6e-05" ixz="-6e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.122725 0.085364 -0.020992" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.122725 0.085364 -0.020992" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__12__1">
+  <inertial>
+    <origin xyz="-0.017896979593150092 -0.01591484849799299 -0.010859736167417838" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="5.8e-05" iyy="9.8e-05" izz="9.2e-05" ixy="2e-06" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.127309 0.173245 -0.044615" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.127309 0.173245 -0.044615" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Prehenseur_fifty_fifty_Pousse_right_v1__1__1">
+  <inertial>
+    <origin xyz="-0.11335579942233522 0.14924223239227924 -0.0657783018577637" rpy="0 0 0"/>
+    <mass value="0.21023886280433182"/>
+    <inertia ixx="0.000118" iyy="3e-05" izz="9.4e-05" ixy="-7e-06" iyz="9e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.190295 0.362652 -0.102752" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.190295 0.362652 -0.102752" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Prehenseur_fifty_fifty_Main_right_v1__1__1">
+  <inertial>
+    <origin xyz="0.003568246909081682 -0.038856375039070246 -0.013247124581497495" rpy="0 0 0"/>
+    <mass value="0.2802698772366261"/>
+    <inertia ixx="0.000165" iyy="8.1e-05" izz="0.000109" ixy="-1.2e-05" iyz="5e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.123819 0.187264 -0.05135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.123819 0.187264 -0.05135" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="screen_v1_1">
+  <inertial>
+    <origin xyz="-0.0040412860559233005 0.27423798717810927 0.1693183743854116" rpy="0 0 0"/>
+    <mass value="0.05357645890624925"/>
+    <inertia ixx="1.5e-05" iyy="7.3e-05" izz="5.8e-05" ixy="-1e-06" iyz="-1e-06" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.007107 0.372574 -0.108183" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.007107 0.372574 -0.108183" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="spine_default_1">
+  <inertial>
+    <origin xyz="0.015025892749360163 0.009651890072813522 0.005568688082809373" rpy="0 0 0"/>
+    <mass value="0.16070971272931903"/>
+    <inertia ixx="0.00011" iyy="0.000136" izz="8.4e-05" ixy="0.0" iyz="1.1e-05" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.014994 0.067431 -0.085449" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.014994 0.067431 -0.085449" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_sts3215_v1__1__1">
+  <inertial>
+    <origin xyz="-0.018113958627718682 -2.3729273459310862e-05 0.013877191834498925" rpy="0 0 0"/>
+    <mass value="0.34332301760825074"/>
+    <inertia ixx="9.2e-05" iyy="9.9e-05" izz="5.8e-05" ixy="0.0" iyz="-0.0" ixz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.018406 0.065684 -0.12431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.018406 0.065684 -0.12431" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find Cogni-robot_description)/meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="rotation_bas_du_corps" type="continuous">
+  <origin xyz="2e-06 -0.064517 0.050918" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="servo_sts3215_v1_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+<joint name="Rigide 4" type="fixed">
+  <origin xyz="-0.00455 0.014996 0.014086" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__1__1"/>
+  <child link="double_rotation_link_double_feetech_v1_1"/>
+</joint>
+
+<joint name="Rigide 5" type="fixed">
+  <origin xyz="-0.034531 0.014996 -0.002914" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__1__1"/>
+  <child link="double_rotation_link_double_feetech_v1__1__1"/>
+</joint>
+
+<joint name="Rigide 6" type="fixed">
+  <origin xyz="-0.0001 0.0069 -0.017" rpy="0 0 0"/>
+  <parent link="double_rotation_link_double_feetech_v1_1"/>
+  <child link="servo_sts3215_v1__2__1"/>
+</joint>
+
+<joint name="rotation_yx_torso" type="continuous">
+  <origin xyz="-0.015004 0.034532 0.002914" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__2__1"/>
+  <child link="chest_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rigide 8" type="fixed">
+  <origin xyz="0.072186 -0.186513 -0.074472" rpy="0 0 0"/>
+  <parent link="chest_1"/>
+  <child link="servo_sts3215_v1__3__1"/>
+</joint>
+
+<joint name="Rigide 9" type="fixed">
+  <origin xyz="-0.075242 -0.191548 -0.06944" rpy="0 0 0"/>
+  <parent link="chest_1"/>
+  <child link="servo_sts3215_v1__4__1"/>
+</joint>
+
+<joint name="Rigide 10" type="fixed">
+  <origin xyz="-0.008654 -0.052439 0.047849" rpy="0 0 0"/>
+  <parent link="chest_1"/>
+  <child link="servo_sts3215-2_1"/>
+</joint>
+
+<joint name="rotation_zx_neck" type="continuous">
+  <origin xyz="0.011425 -0.0083 0.03423" rpy="0 0 0"/>
+  <parent link="servo_sts3215-2_1"/>
+  <child link="neck_v2_1"/>
+  <axis xyz="-0.034111 -0.0 -0.999418"/>
+</joint>
+
+<joint name="rotation_yx_neck" type="continuous">
+  <origin xyz="0.018497 0.000488 0.019414" rpy="0 0 0"/>
+  <parent link="neck_v2_1"/>
+  <child link="servo-sts3215-2_1"/>
+  <axis xyz="0.999203 0.020725 -0.034104"/>
+</joint>
+
+<joint name="Rigide 13" type="fixed">
+  <origin xyz="0.222429 -0.027417 0.05067" rpy="0 0 0"/>
+  <parent link="servo-sts3215-2_1"/>
+  <child link="head_back_v2_1"/>
+</joint>
+
+<joint name="Rigide 14" type="fixed">
+  <origin xyz="-0.238777 0.037056 0.042184" rpy="0 0 0"/>
+  <parent link="head_back_v2_1"/>
+  <child link="head_face_v1_1"/>
+</joint>
+
+<joint name="rotation_soulder_zy_right" type="continuous">
+  <origin xyz="-0.000852 0.130229 0.123595" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__4__1"/>
+  <child link="shoulder_right_v1_1"/>
+  <axis xyz="0.999418 -0.0 -0.034111"/>
+</joint>
+
+<joint name="rotation_shoulder_xy_right" type="continuous">
+  <origin xyz="-0.030073 -0.009968 0.001018" rpy="0 0 0"/>
+  <parent link="shoulder_right_v1_1"/>
+  <child link="servo_sts3215_v1__5__1"/>
+  <axis xyz="0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Rigide 17" type="fixed">
+  <origin xyz="0.072104 -0.123129 -0.115218" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__5__1"/>
+  <child link="arm_connector_Feetech_v1_1"/>
+</joint>
+
+<joint name="rotation_biceps_right" type="continuous">
+  <origin xyz="-0.073711 0.152601 0.071062" rpy="0 0 0"/>
+  <parent link="arm_connector_Feetech_v1_1"/>
+  <child link="servo_sts3215_v1__6__1"/>
+  <axis xyz="0.034111 0.0 0.999418"/>
+</joint>
+
+<joint name="Rigide 19" type="fixed">
+  <origin xyz="0.06896 -0.136665 0.110302" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__6__1"/>
+  <child link="upper_arm_double_right_v1_1"/>
+</joint>
+
+<joint name="Rigide 20" type="fixed">
+  <origin xyz="-0.086736 0.111429 -0.18564" rpy="0 0 0"/>
+  <parent link="upper_arm_double_right_v1_1"/>
+  <child link="servo_sts3215_v1__7__1"/>
+</joint>
+
+<joint name="rotation_coude_right" type="continuous">
+  <origin xyz="-0.005609 0.014996 -0.030913" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__7__1"/>
+  <child link="avant_bras_right_v1_1"/>
+  <axis xyz="0.999418 -0.0 -0.034111"/>
+</joint>
+
+<joint name="Rigide 22" type="fixed">
+  <origin xyz="-0.008202 -0.090049 0.011227" rpy="0 0 0"/>
+  <parent link="avant_bras_right_v1_1"/>
+  <child link="servo_sts3215_v1__8__1"/>
+</joint>
+
+<joint name="Rigide 23" type="fixed">
+  <origin xyz="0.116525 0.142856 0.020815" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__8__1"/>
+  <child link="Prehenseur_fifty_fifty_Pousse_right_v1_1"/>
+</joint>
+
+<joint name="rotation_pince_right" type="continuous">
+  <origin xyz="0.003068 -0.015004 0.004448" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__8__1"/>
+  <child link="Prehenseur_fifty_fifty_Main_right_v1_1"/>
+  <axis xyz="-0.034111 -0.0 -0.999418"/>
+</joint>
+
+<joint name="rotation_shoulder_zy_left" type="continuous">
+  <origin xyz="0.00733 0.125194 0.123308" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__3__1"/>
+  <child link="shoulder_left_v1_1"/>
+  <axis xyz="-0.999418 0.0 0.034111"/>
+</joint>
+
+<joint name="rotation_shoulder_xy_left" type="continuous">
+  <origin xyz="0.030121 -0.009866 0.00039" rpy="0 0 0"/>
+  <parent link="shoulder_left_v1_1"/>
+  <child link="servo_sts3215_v1__9__1"/>
+  <axis xyz="0.004878 -0.98972 0.142933"/>
+</joint>
+
+<joint name="Rigide 27" type="fixed">
+  <origin xyz="0.084445 -0.103884 0.099597" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__9__1"/>
+  <child link="arm_connector_Feetech_v1__1__1"/>
+</joint>
+
+<joint name="rotation_biceps_left" type="continuous">
+  <origin xyz="-0.086032 0.126733 -0.147517" rpy="0 0 0"/>
+  <parent link="arm_connector_Feetech_v1__1__1"/>
+  <child link="servo_sts3215_v1__10__1"/>
+  <axis xyz="0.030409 0.143016 0.989253"/>
+</joint>
+
+<joint name="Rigide 29" type="fixed">
+  <origin xyz="0.097999 0.11699 0.087785" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__10__1"/>
+  <child link="upper_arm_double_right_v1__1__1"/>
+</joint>
+
+<joint name="Rigide 30" type="fixed">
+  <origin xyz="-0.085075 -0.130782 -0.156546" rpy="0 0 0"/>
+  <parent link="upper_arm_double_right_v1__1__1"/>
+  <child link="servo_sts3215_v1__11__1"/>
+</joint>
+
+<joint name="rotation_coude_left" type="continuous">
+  <origin xyz="0.002999 -0.01398 -0.035863" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__11__1"/>
+  <child link="avant_bras_left_1"/>
+  <axis xyz="-0.998388 0.051803 0.023201"/>
+</joint>
+
+<joint name="Rigide 32" type="fixed">
+  <origin xyz="0.004584 -0.087881 0.023623" rpy="0 0 0"/>
+  <parent link="avant_bras_left_1"/>
+  <child link="servo_sts3215_v1__12__1"/>
+</joint>
+
+<joint name="Rigide 33" type="fixed">
+  <origin xyz="0.062986 -0.189407 0.058137" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__12__1"/>
+  <child link="Prehenseur_fifty_fifty_Pousse_right_v1__1__1"/>
+</joint>
+
+<joint name="Révolution 34" type="continuous">
+  <origin xyz="-0.00349 -0.014019 0.006735" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1__12__1"/>
+  <child link="Prehenseur_fifty_fifty_Main_right_v1__1__1"/>
+  <axis xyz="-0.030409 -0.143016 -0.989253"/>
+</joint>
+
+<joint name="Rigide 35" type="fixed">
+  <origin xyz="0.003435 -0.312706 -0.210474" rpy="0 0 0"/>
+  <parent link="head_face_v1_1"/>
+  <child link="screen_v1_1"/>
+</joint>
+
+<joint name="Rigide 36" type="fixed">
+  <origin xyz="-0.014996 -0.002914 0.034531" rpy="0 0 0"/>
+  <parent link="servo_sts3215_v1_1"/>
+  <child link="spine_default_1"/>
+</joint>
+
+<joint name="Révolution 37" type="continuous">
+  <origin xyz="0.0334 0.001747 0.038861" rpy="0 0 0"/>
+  <parent link="spine_default_1"/>
+  <child link="servo_sts3215_v1__1__1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+</robot>
