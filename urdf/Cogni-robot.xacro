@@ -959,7 +959,7 @@
   <child link="Prehenseur_fifty_fifty_Pousse_right_v1__1__1"/>
 </joint>
 
-<joint name="Révolution 34" type="continuous">
+<joint name="rotation 34" type="continuous">
   <origin xyz="-0.00349 -0.014019 0.006735" rpy="0 0 0"/>
   <parent link="servo_sts3215_v1__12__1"/>
   <child link="Prehenseur_fifty_fifty_Main_right_v1__1__1"/>
@@ -978,7 +978,7 @@
   <child link="spine_default_1"/>
 </joint>
 
-<joint name="Révolution 37" type="continuous">
+<joint name="rotation 37" type="continuous">
   <origin xyz="0.0334 0.001747 0.038861" rpy="0 0 0"/>
   <parent link="spine_default_1"/>
   <child link="servo_sts3215_v1__1__1"/>

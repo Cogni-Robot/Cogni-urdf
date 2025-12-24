@@ -144,23 +144,23 @@
   </actuator>
 </transmission>
 
-<transmission name="Révolution 34_tran">
+<transmission name="rotation 34_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Révolution 34">
+  <joint name="rotation 34">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="Révolution 34_actr">
+  <actuator name="rotation 34_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="Révolution 37_tran">
+<transmission name="rotation 37_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Révolution 37">
+  <joint name="rotation 37">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="Révolution 37_actr">
+  <actuator name="rotation 37_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
