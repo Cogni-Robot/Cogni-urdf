@@ -1,0 +1,209 @@
+<mujoco model="Cogni-robot">
+  <compiler angle="radian"/>
+
+  <default>
+    <geom contype="0" conaffinity="0" density="1000" condim="3" solref="0.002 1" solimp="0.9 0.95 0.001"/>
+
+    <default class="sts3215">
+        <joint damping="0.5" frictionloss="0.1" armature="0.01"/>
+        <position kp="80" kv="3" forcerange="-3.0 3.0" ctrlrange="-3.14 3.14"/>
+    </default>
+  </default>
+
+  <compiler angle="radian" meshdir="/home/samuel/cogni_project/assets/meshes" discardvisual="false"/>
+  <option timestep="0.001" integrator="RK4"/>
+
+  <asset>
+    <mesh name="base_link" content_type="model/stl" file="base_link.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1_1" content_type="model/stl" file="servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="double_rotation_link_double_feetech_v1_1" content_type="model/stl" file="double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="double_rotation_link_double_feetech_v1__1__1" content_type="model/stl" file="double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__2__1" content_type="model/stl" file="servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="chest_1" content_type="model/stl" file="chest_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__3__1" content_type="model/stl" file="servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__4__1" content_type="model/stl" file="servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215-2_1" content_type="model/stl" file="servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="neck_v2_1" content_type="model/stl" file="neck_v2_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo-sts3215-2_1" content_type="model/stl" file="servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="head_back_v2_1" content_type="model/stl" file="head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="head_face_v1_1" content_type="model/stl" file="head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shoulder_right_v1_1" content_type="model/stl" file="shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__5__1" content_type="model/stl" file="servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="arm_connector_Feetech_v1_1" content_type="model/stl" file="arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__6__1" content_type="model/stl" file="servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="upper_arm_double_right_v1_1" content_type="model/stl" file="upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__7__1" content_type="model/stl" file="servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="avant_bras_right_v1_1" content_type="model/stl" file="avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__8__1" content_type="model/stl" file="servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="Prehenseur_fifty_fifty_Pousse_right_v1_1" content_type="model/stl" file="Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="Prehenseur_fifty_fifty_Main_right_v1_1" content_type="model/stl" file="Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="shoulder_left_v1_1" content_type="model/stl" file="shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__9__1" content_type="model/stl" file="servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="arm_connector_Feetech_v1__1__1" content_type="model/stl" file="arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__10__1" content_type="model/stl" file="servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="upper_arm_double_right_v1__1__1" content_type="model/stl" file="upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__11__1" content_type="model/stl" file="servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="avant_bras_left_1" content_type="model/stl" file="avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__12__1" content_type="model/stl" file="servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="Prehenseur_fifty_fifty_Pousse_right_v1__1__1" content_type="model/stl" file="Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="Prehenseur_fifty_fifty_Main_right_v1__1__1" content_type="model/stl" file="Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="screen_v1_1" content_type="model/stl" file="screen_v1_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="spine_default_1" content_type="model/stl" file="spine_default_1.stl" scale="0.001 0.001 0.001"/>
+    <mesh name="servo_sts3215_v1__1__1" content_type="model/stl" file="servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+  </asset>
+
+  <worldbody>
+    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="base_link"/>
+    <geom type="mesh" mesh="base_link"/>
+    <body name="servo_sts3215_v1_1" pos="2e-06 -0.064517 0.050918">
+      <inertial pos="0.00573684 0.0056551 0.0239541" quat="0.84735 0.445117 0.104858 0.269952" mass="0.504033" diaginertia="0.000349276 0.000334896 0.000184114"/>
+      <joint name="rotation_bas_du_corps" pos="0 0 0" axis="0 0 -1" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+      <geom pos="-2e-06 0.064517 -0.050918" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1_1"/>
+      <geom pos="-2e-06 0.064517 -0.050918" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1_1"/>
+      <geom pos="-2e-06 0.064517 -0.050918" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="spine_default_1"/>
+      <geom pos="-2e-06 0.064517 -0.050918" quat="1 0 0 0" type="mesh" mesh="spine_default_1"/>
+      <body name="servo_sts3215_v1__1__1" pos="0.018404 -0.001167 0.073392">
+        <inertial pos="-0.0188918 0.0191687 0.013944" quat="0.700097 0.713736 0.0098051 0.0187131" mass="0.707626" diaginertia="0.000448299 0.000377832 0.000200592"/>
+        <joint name="rotation 37" pos="0 0 0" axis="1 0 0" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+        <geom pos="-0.018406 0.065684 -0.12431" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__1__1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__1__1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="double_rotation_link_double_feetech_v1_1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" mesh="double_rotation_link_double_feetech_v1_1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__2__1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" mesh="servo_sts3215_v1__2__1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="double_rotation_link_double_feetech_v1__1__1"/>
+        <geom pos="-0.018406 0.065684 -0.12431" type="mesh" mesh="double_rotation_link_double_feetech_v1__1__1"/>
+        <body name="chest_1" pos="-0.019654 0.056428 0">
+          <inertial pos="0.086046 0.0727592 0.0660425" quat="0.567804 0.735997 -0.35086 -0.113154" mass="1.55217" diaginertia="0.0485313 0.0440991 0.00614141"/>
+          <joint name="rotation_yx_torso" pos="0 0 0" axis="0 -1 0" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="chest_1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" mesh="chest_1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__3__1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__3__1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__4__1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__4__1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215-2_1"/>
+          <geom pos="0.001248 0.009256 -0.12431" quat="1 0 0 0" type="mesh" mesh="servo_sts3215-2_1"/>
+          <body name="shoulder_left_v1_1" pos="0.079516 -0.061319 0.048836">
+            <inertial pos="0.0130718 0.00794331 -0.000147511" quat="0.585637 0.492915 -0.42029 0.487259" mass="0.0899707" diaginertia="3.9659e-05 3.38297e-05 2.05113e-05"/>
+            <joint name="rotation_shoulder_zy_left" pos="0 0 0" axis="-0.999418 0 0.034111" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+            <geom pos="-0.078268 0.070575 -0.173146" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shoulder_left_v1_1"/>
+            <geom pos="-0.078268 0.070575 -0.173146" quat="1 0 0 0" type="mesh" mesh="shoulder_left_v1_1"/>
+            <body name="servo_sts3215_v1__9__1" pos="0.030121 -0.009866 0.00039">
+              <inertial pos="0.00191464 0.0179004 -0.0200044" quat="0.938562 0.190568 -0.134543 -0.254331" mass="0.394071" diaginertia="0.000166597 0.000153582 8.64498e-05"/>
+              <joint name="rotation_shoulder_xy_left" pos="0 0 0" axis="0.004878 -0.98972 0.142933" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+              <geom pos="-0.108389 0.080441 -0.173536" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__9__1"/>
+              <geom pos="-0.108389 0.080441 -0.173536" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__9__1"/>
+              <geom pos="-0.108389 0.080441 -0.173536" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arm_connector_Feetech_v1__1__1"/>
+              <geom pos="-0.108389 0.080441 -0.173536" quat="1 0 0 0" type="mesh" mesh="arm_connector_Feetech_v1__1__1"/>
+              <body name="servo_sts3215_v1__10__1" pos="-0.001587 0.022849 -0.04792">
+                <inertial pos="0.000388646 -0.0138466 -0.0542481" quat="0.997702 0.0421373 -0.00424191 0.0528883" mass="0.823587" diaginertia="0.00137738 0.0013264 0.000254523"/>
+                <joint name="rotation_biceps_left" pos="0 0 0" axis="0.030409 0.143016 0.989253" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                <geom pos="-0.106802 0.057592 -0.125616" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__10__1"/>
+                <geom pos="-0.106802 0.057592 -0.125616" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__10__1"/>
+                <geom pos="-0.106802 0.057592 -0.125616" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="upper_arm_double_right_v1__1__1"/>
+                <geom pos="-0.106802 0.057592 -0.125616" type="mesh" mesh="upper_arm_double_right_v1__1__1"/>
+                <geom pos="-0.106802 0.057592 -0.125616" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__11__1"/>
+                <geom pos="-0.106802 0.057592 -0.125616" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__11__1"/>
+                <body name="avant_bras_left_1" pos="0.015923 -0.027772 -0.104624">
+                  <inertial pos="-0.0197749 -0.0158849 -0.140236" quat="0.971043 0.125853 0.0694043 0.190837" mass="0.740187" diaginertia="0.0133151 0.0132769 0.000640084"/>
+                  <joint name="rotation_coude_left" pos="0 0 0" axis="-0.998388 0.051803 0.023201" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="avant_bras_left_1"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" mesh="avant_bras_left_1"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__12__1"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__12__1"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Prehenseur_fifty_fifty_Pousse_right_v1__1__1"/>
+                  <geom pos="-0.122725 0.085364 -0.020992" quat="1 0 0 0" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1__1__1"/>
+                  <body name="Prehenseur_fifty_fifty_Main_right_v1__1__1" pos="0.001094 -0.1019 0.030358">
+                    <inertial pos="0.00356825 -0.0388564 -0.0132471" quat="0.75955 0.646659 -0.0406747 -0.0571153" mass="0.28027" diaginertia="0.000166689 0.000109796 7.85149e-05"/>
+                    <joint name="rotation 34" pos="0 0 0" axis="-0.030409 -0.143016 -0.989253" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                    <geom pos="-0.123819 0.187264 -0.05135" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Prehenseur_fifty_fifty_Main_right_v1__1__1"/>
+                    <geom pos="-0.123819 0.187264 -0.05135" quat="1 0 0 0" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1__1__1"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="shoulder_right_v1_1" pos="-0.076094 -0.061319 0.054155">
+            <inertial pos="-0.0130106 0.0078207 0.00187677" quat="0.5 0.5 -0.5 0.5" mass="0.0899661" diaginertia="3.9e-05 3.4e-05 2.1e-05"/>
+            <joint name="rotation_soulder_zy_right" pos="0 0 0" axis="0.999418 0 -0.034111" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+            <geom pos="0.077342 0.070575 -0.178465" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="shoulder_right_v1_1"/>
+            <geom pos="0.077342 0.070575 -0.178465" quat="1 0 0 0" type="mesh" mesh="shoulder_right_v1_1"/>
+            <body name="servo_sts3215_v1__5__1" pos="-0.030073 -0.009968 0.001018">
+              <inertial pos="0.0060097 0.0492501 0.00706329" quat="0.468679 0.878988 -0.0598373 -0.0643373" mass="0.394071" diaginertia="0.0039717 0.00394602 9.40175e-05"/>
+              <joint name="rotation_shoulder_xy_right" pos="0 0 0" axis="0 1 0" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+              <geom pos="0.107415 0.080543 -0.179483" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__5__1"/>
+              <geom pos="0.107415 0.080543 -0.179483" type="mesh" mesh="servo_sts3215_v1__5__1"/>
+              <geom pos="0.107415 0.080543 -0.179483" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="arm_connector_Feetech_v1_1"/>
+              <geom pos="0.107415 0.080543 -0.179483" quat="1 0 0 0" type="mesh" mesh="arm_connector_Feetech_v1_1"/>
+              <body name="servo_sts3215_v1__6__1" pos="-0.001607 0.029472 -0.044156">
+                <inertial pos="0.0137426 -0.0104924 -0.0569884" quat="0.91613 0.130906 -0.154779 -0.34585" mass="0.823587" diaginertia="0.00161812 0.00155726 0.000313162"/>
+                <joint name="rotation_biceps_right" pos="0 0 0" axis="0.034111 0 0.999418" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                <geom pos="0.109022 0.051071 -0.135327" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__6__1"/>
+                <geom pos="0.109022 0.051071 -0.135327" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__6__1"/>
+                <geom pos="0.109022 0.051071 -0.135327" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="upper_arm_double_right_v1_1"/>
+                <geom pos="0.109022 0.051071 -0.135327" type="mesh" mesh="upper_arm_double_right_v1_1"/>
+                <geom pos="0.109022 0.051071 -0.135327" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__7__1"/>
+                <geom pos="0.109022 0.051071 -0.135327" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__7__1"/>
+                <body name="avant_bras_right_v1_1" pos="-0.023385 -0.01024 -0.106251">
+                  <inertial pos="0.0257935 -0.0821062 -0.0479159" quat="0.853289 0.512241 -0.00563796 0.0973389" mass="0.740184" diaginertia="0.00766531 0.00694551 0.000978531"/>
+                  <joint name="rotation_coude_right" pos="0 0 0" axis="0.999418 0 -0.034111" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="avant_bras_right_v1_1"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" mesh="avant_bras_right_v1_1"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo_sts3215_v1__8__1"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" mesh="servo_sts3215_v1__8__1"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Prehenseur_fifty_fifty_Pousse_right_v1_1"/>
+                  <geom pos="0.132407 0.061311 -0.029076" quat="1 0 0 0" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1_1"/>
+                  <body name="Prehenseur_fifty_fifty_Main_right_v1_1" pos="-0.005134 -0.105053 0.015675">
+                    <inertial pos="-0.00650239 -0.0363163 -0.0182358" quat="0.697414 0.71499 0.0452271 0.018934" mass="0.28027" diaginertia="0.000166805 0.000108947 7.82489e-05"/>
+                    <joint name="rotation_pince_right" pos="0 0 0" axis="-0.034111 0 -0.999418" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+                    <geom pos="0.137541 0.166364 -0.044751" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="Prehenseur_fifty_fifty_Main_right_v1_1"/>
+                    <geom pos="0.137541 0.166364 -0.044751" quat="1 0 0 0" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1_1"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+          <body name="neck_v2_1" pos="0.002771 -0.060739 0.082079">
+            <inertial pos="0.00110671 -7.79633e-05 0.0104466" quat="0.5 0.5 0.5 0.5" mass="0.0561459" diaginertia="2.5e-05 2.2e-05 7e-06"/>
+            <joint name="rotation_zx_neck" pos="0 0 0" axis="-0.034111 0 -0.999418" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+            <geom pos="-0.001523 0.069995 -0.206389" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="neck_v2_1"/>
+            <geom pos="-0.001523 0.069995 -0.206389" quat="1 0 0 0" type="mesh" mesh="neck_v2_1"/>
+            <body name="servo-sts3215-2_1" pos="0.018497 0.000488 0.019414">
+              <inertial pos="-0.0764452 0.129066 -0.0574377" quat="0.609669 0.648147 0.0465654 0.453918" mass="1.18315" diaginertia="0.0466603 0.0453634 0.0034719"/>
+              <joint name="rotation_yx_neck" pos="0 0 0" axis="0.999203 0.020725 -0.034104" range="-6.28 6.28" actuatorfrcrange="-100 100"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="servo-sts3215-2_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" mesh="servo-sts3215-2_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="head_back_v2_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" mesh="head_back_v2_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="head_face_v1_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" mesh="head_face_v1_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" mesh="screen_v1_1"/>
+              <geom pos="-0.02002 0.069507 -0.225803" quat="1 0 0 0" type="mesh" mesh="screen_v1_1"/>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <position name="act_bas_du_corps" joint="rotation_bas_du_corps" class="sts3215"/>
+    <position name="act_rotation_37" joint="rotation 37" class="sts3215"/>
+    <position name="act_torso_yx" joint="rotation_yx_torso" class="sts3215"/>
+
+    <position name="act_shoulder_left_zy" joint="rotation_shoulder_zy_left" class="sts3215"/>
+    <position name="act_shoulder_left_xy" joint="rotation_shoulder_xy_left" class="sts3215"/>
+    <position name="act_biceps_left" joint="rotation_biceps_left" class="sts3215"/>
+    <position name="act_coude_left" joint="rotation_coude_left" class="sts3215"/>
+    <position name="act_main_left" joint="rotation 34" class="sts3215"/> <position name="act_shoulder_right_zy" joint="rotation_soulder_zy_right" class="sts3215"/>
+    <position name="act_shoulder_right_xy" joint="rotation_shoulder_xy_right" class="sts3215"/>
+    <position name="act_biceps_right" joint="rotation_biceps_right" class="sts3215"/>
+    <position name="act_coude_right" joint="rotation_coude_right" class="sts3215"/>
+    <position name="act_main_right" joint="rotation_pince_right" class="sts3215"/>
+
+    <position name="act_neck_zx" joint="rotation_zx_neck" class="sts3215"/>
+    <position name="act_neck_yx" joint="rotation_yx_neck" class="sts3215"/>
+  </actuator>
+
+</mujoco>
