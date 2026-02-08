@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-2e-06 0.064517 -0.050918" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-2e-06 0.064517 -0.050918" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.013856 0.050688 -0.138396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.013856 0.050688 -0.138396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/double_rotation_link_double_feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="0.016125 0.050688 -0.121396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.016125 0.050688 -0.121396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/double_rotation_link_double_feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.013756 0.043788 -0.121396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.013756 0.043788 -0.121396" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="0.001248 0.009256 -0.12431" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.001248 0.009256 -0.12431" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/chest_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.070938 0.195769 -0.049838" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.070938 0.195769 -0.049838" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="0.07649 0.200804 -0.05487" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.07649 0.200804 -0.05487" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__4__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="0.009902 0.061695 -0.172159" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.009902 0.061695 -0.172159" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-0.001523 0.069995 -0.206389" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.001523 0.069995 -0.206389" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/neck_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.02002 0.069507 -0.225803" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.02002 0.069507 -0.225803" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo-sts3215-2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -244,14 +244,14 @@
   <visual>
     <origin xyz="-0.242449 0.096924 -0.276473" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.242449 0.096924 -0.276473" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/head_back_v2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -265,14 +265,14 @@
   <visual>
     <origin xyz="-0.003672 0.059868 -0.318657" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.003672 0.059868 -0.318657" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/head_face_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -286,14 +286,14 @@
   <visual>
     <origin xyz="0.077342 0.070575 -0.178465" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.077342 0.070575 -0.178465" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/shoulder_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -307,14 +307,14 @@
   <visual>
     <origin xyz="0.107415 0.080543 -0.179483" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.107415 0.080543 -0.179483" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__5__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -328,14 +328,14 @@
   <visual>
     <origin xyz="0.035311 0.203672 -0.064265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.035311 0.203672 -0.064265" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/arm_connector_Feetech_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -349,14 +349,14 @@
   <visual>
     <origin xyz="0.109022 0.051071 -0.135327" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.109022 0.051071 -0.135327" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__6__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -370,14 +370,14 @@
   <visual>
     <origin xyz="0.040062 0.187736 -0.245629" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.040062 0.187736 -0.245629" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/upper_arm_double_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -391,14 +391,14 @@
   <visual>
     <origin xyz="0.126798 0.076307 -0.059989" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.126798 0.076307 -0.059989" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__7__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -412,14 +412,14 @@
   <visual>
     <origin xyz="0.132407 0.061311 -0.029076" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.132407 0.061311 -0.029076" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/avant_bras_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -433,14 +433,14 @@
   <visual>
     <origin xyz="0.140609 0.15136 -0.040303" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.140609 0.15136 -0.040303" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__8__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -454,14 +454,14 @@
   <visual>
     <origin xyz="0.024084 0.008504 -0.061118" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.024084 0.008504 -0.061118" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -475,14 +475,14 @@
   <visual>
     <origin xyz="0.137541 0.166364 -0.044751" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.137541 0.166364 -0.044751" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Main_right_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -496,14 +496,14 @@
   <visual>
     <origin xyz="-0.078268 0.070575 -0.173146" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.078268 0.070575 -0.173146" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/shoulder_left_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -517,14 +517,14 @@
   <visual>
     <origin xyz="-0.108389 0.080441 -0.173536" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.108389 0.080441 -0.173536" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__9__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -538,14 +538,14 @@
   <visual>
     <origin xyz="-0.192834 0.184325 -0.273133" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.192834 0.184325 -0.273133" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/arm_connector_Feetech_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -559,14 +559,14 @@
   <visual>
     <origin xyz="-0.106802 0.057592 -0.125616" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.106802 0.057592 -0.125616" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__10__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -580,14 +580,14 @@
   <visual>
     <origin xyz="-0.204801 -0.059398 -0.213401" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.204801 -0.059398 -0.213401" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/upper_arm_double_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -601,14 +601,14 @@
   <visual>
     <origin xyz="-0.119726 0.071384 -0.056855" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.119726 0.071384 -0.056855" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__11__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -622,14 +622,14 @@
   <visual>
     <origin xyz="-0.122725 0.085364 -0.020992" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.122725 0.085364 -0.020992" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/avant_bras_left_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -643,14 +643,14 @@
   <visual>
     <origin xyz="-0.127309 0.173245 -0.044615" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.127309 0.173245 -0.044615" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__12__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -664,14 +664,14 @@
   <visual>
     <origin xyz="-0.190295 0.362652 -0.102752" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.190295 0.362652 -0.102752" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -685,14 +685,14 @@
   <visual>
     <origin xyz="-0.123819 0.187264 -0.05135" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.123819 0.187264 -0.05135" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -706,14 +706,14 @@
   <visual>
     <origin xyz="-0.007107 0.372574 -0.108183" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.007107 0.372574 -0.108183" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/screen_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -727,14 +727,14 @@
   <visual>
     <origin xyz="0.014994 0.067431 -0.085449" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.014994 0.067431 -0.085449" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/spine_default_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -748,14 +748,14 @@
   <visual>
     <origin xyz="-0.018406 0.065684 -0.12431" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.018406 0.065684 -0.12431" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="../../meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="meshes/servo_sts3215_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
