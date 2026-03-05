@@ -1,166 +1,177 @@
 <?xml version="1.0" ?>
 <robot name="Cogni-robot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-<transmission name="rotation_bas_du_corps_tran">
+<transmission name="torso_yaw_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_bas_du_corps">
+  <joint name="torso_yaw">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_bas_du_corps_actr">
+  <actuator name="torso_yaw_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_yx_torso_tran">
+<transmission name="torso_pitch_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_yx_torso">
+  <joint name="torso_pitch">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_yx_torso_actr">
+  <actuator name="torso_pitch_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_zx_neck_tran">
+<transmission name="neck_yaw_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_zx_neck">
+  <joint name="neck_yaw">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_zx_neck_actr">
+  <actuator name="neck_yaw_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_yx_neck_tran">
+<transmission name="neck_pitch_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_yx_neck">
+  <joint name="neck_pitch">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_yx_neck_actr">
+  <actuator name="neck_pitch_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_soulder_zy_right_tran">
+<transmission name="shoulder_roll_right_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_soulder_zy_right">
+  <joint name="shoulder_roll_right">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_soulder_zy_right_actr">
+  <actuator name="shoulder_roll_right_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_shoulder_xy_right_tran">
+<transmission name="shoulder_pitch_right_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_shoulder_xy_right">
+  <joint name="shoulder_pitch_right">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_shoulder_xy_right_actr">
+  <actuator name="shoulder_pitch_right_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_biceps_right_tran">
+<transmission name="shoulder_yaw_right_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_biceps_right">
+  <joint name="shoulder_yaw_right">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_biceps_right_actr">
+  <actuator name="shoulder_yaw_right_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_coude_right_tran">
+<transmission name="elbow_right_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_coude_right">
+  <joint name="elbow_right">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_coude_right_actr">
+  <actuator name="elbow_right_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_pince_right_tran">
+<transmission name="gripper_right_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_pince_right">
+  <joint name="gripper_right">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_pince_right_actr">
+  <actuator name="gripper_right_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_shoulder_zy_left_tran">
+<transmission name="shoulder_roll_left_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_shoulder_zy_left">
+  <joint name="shoulder_roll_left">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_shoulder_zy_left_actr">
+  <actuator name="shoulder_roll_left_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_shoulder_xy_left_tran">
+<transmission name="shoulder_pitch_left_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_shoulder_xy_left">
+  <joint name="shoulder_pitch_left">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_shoulder_xy_left_actr">
+  <actuator name="shoulder_pitch_left_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_biceps_left_tran">
+<transmission name="shoulder_yaw_left_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_biceps_left">
+  <joint name="shoulder_yaw_left">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_biceps_left_actr">
+  <actuator name="shoulder_yaw_left_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation_coude_left_tran">
+<transmission name="elbow_left_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation_coude_left">
+  <joint name="elbow_left">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation_coude_left_actr">
+  <actuator name="elbow_left_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation 34_tran">
+<transmission name="revolution_34_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation 34">
+  <joint name="revolution_34">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation 34_actr">
+  <actuator name="revolution_34_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
 </transmission>
 
-<transmission name="rotation 37_tran">
+<transmission name="spine_roll_tran">
   <type>transmission_interface/SimpleTransmission</type>
-  <joint name="rotation 37">
+  <joint name="spine_roll">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
-  <actuator name="rotation 37_actr">
+  <actuator name="spine_roll_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="revolution_38_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="revolution_38">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="revolution_38_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
