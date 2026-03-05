@@ -200,7 +200,7 @@
       </geometry>
     </collision>
   </link>
-  <link name="servo-sts3215-2_1">
+  <link name="tete">
     <inertial>
       <origin xyz="-0.018200236746651933 0.01185966221025403 0.005376001252874213" rpy="0 0 0"/>
       <mass value="0.2747881442151801"/>
@@ -240,7 +240,7 @@
       </geometry>
     </collision>
   </link>
-  <link name="head_face_v1_1">
+  <link name="head_face">
     <inertial>
       <origin xyz="-4.459929631812562e-08 -0.028186198727073175 -0.056621570075358396" rpy="0 0 0"/>
       <mass value="0.3123301638656947"/>
@@ -774,19 +774,19 @@
   <joint name="neck_pitch" type="revolute">
     <origin xyz="0.017831 0.000119 0.020034" rpy="0 0 0"/>
     <parent link="neck_v2_1"/>
-    <child link="servo-sts3215-2_1"/>
+    <child link="tete"/>
     <axis xyz="1.0 -0.0 -0.0"/>
     <limit upper="0.40" lower="-0.45" effort="100" velocity="100"/>
   </joint>
   <joint name="fixed_13" type="fixed">
     <origin xyz="0.220532 -0.028617 0.060095" rpy="0 0 0"/>
-    <parent link="servo-sts3215-2_1"/>
+    <parent link="tete"/>
     <child link="head_back_v2_1"/>
   </joint>
   <joint name="fixed_14" type="fixed">
     <origin xyz="-0.239834 0.038658 0.032147" rpy="0 0 0"/>
     <parent link="head_back_v2_1"/>
-    <child link="head_face_v1_1"/>
+    <child link="head_face"/>
   </joint>
   <joint name="shoulder_roll_right" type="revolute">
     <origin xyz="-0.002755 0.127748 0.123494" rpy="0 0 0"/>
@@ -910,7 +910,7 @@
   </joint>
   <joint name="fixed_35" type="fixed">
     <origin xyz="-0.002749 -0.312936 -0.210216" rpy="0 0 0"/>
-    <parent link="head_face_v1_1"/>
+    <parent link="head_face"/>
     <child link="screen_v1_1"/>
   </joint>
   <joint name="fixed_36" type="fixed">
