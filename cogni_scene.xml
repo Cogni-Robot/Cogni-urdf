@@ -4,8 +4,8 @@
     <geom contype="0" conaffinity="0" density="1000" condim="3" solref="0.002 1" solimp="0.9 0.95 0.001"/>
 
     <default class="sts3215">
-        <joint damping="0.5" frictionloss="0.1" armature="0.01"/>
-        <position kp="80" kv="3" forcerange="-3.0 3.0" ctrlrange="-3.14 3.14"/>
+        <joint damping="0.3" frictionloss="0.05" armature="0.002"/>
+        <position kp="100" kv="5" forcerange="-1.5 1.5" ctrlrange="-3.14 3.14"/>
     </default>
   </default>
 
@@ -61,84 +61,84 @@
     <body name="root" pos="0 0 1.1102230246251565e-16" quat="1 0 0 0">
       <site name="root_site" pos="0 0 0" quat="1 0 0 0" />
       <body name="base_link" pos="0 0 0" quat="1 0 0 0">
-        <inertial pos="-1.1219501603328655e-05 -0.056526453492820504 -0.007126953017833521" quat="1.0 0.0 0.0 0.0" mass="1.2458370682377469" diaginertia="0.002516 0.00237 0.002929" />
+        <inertial pos="-1.1219501603328655e-05 -0.056526453492820504 -0.007126953017833521" quat="1.0 0.0 0.0 0.0" mass="1.000" diaginertia="0.002516 0.00237 0.002929" />
         <geom name="base_link_collision_0" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="base_link.stl" rgba="0 0 0 0" />
         <geom name="base_link_visual_0" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="base_link.stl" />
         <body name="servo_taille" pos="2e-06 -0.064517 0.050918" quat="1.0 0.0 0.0 0.0">
-          <joint name="rotation_taille" type="hinge" range="-1.95 1.95" axis="0.0 -0.0 -1.0" />
-          <inertial pos="2.4590533479708028e-05 0.013876940357002876 0.018114364058204026" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.9e-05 5.8e-05 9.2e-05" />
+          <joint name="rotation_taille" class="sts3215" type="hinge" range="-1.95 1.95" axis="0.0 -0.0 -1.0" />
+          <inertial pos="2.4590533479708028e-05 0.013876940357002876 0.018114364058204026" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.9e-05 5.8e-05 9.2e-05" />
           <geom name="servo_sts3215_v1_1_collision_0" pos="-2e-06 0.064517 -0.050918" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1_1.stl" rgba="0 0 0 0" />
           <geom name="servo_sts3215_v1_1_visual_0" pos="-2e-06 0.064517 -0.050918" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1_1.stl" />
           <body name="spine_default_1" pos="-0.014996 -0.002914 0.034531" quat="1.0 0.0 0.0 0.0">
-            <inertial pos="0.015025892749360163 0.009651890072813522 0.005568688082809373" quat="1.0 0.0 0.0 0.0" mass="0.16070971272931903" diaginertia="0.00011 0.000136 8.4e-05" />
+            <inertial pos="0.015025892749360163 0.009651890072813522 0.005568688082809373" quat="1.0 0.0 0.0 0.0" mass="0.060" diaginertia="0.00011 0.000136 8.4e-05" />
             <geom name="spine_default_1_collision_0" pos="0.014994 0.067431 -0.085449" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="spine_default_1.stl" rgba="0 0 0 0" />
             <geom name="spine_default_1_visual_0" pos="0.014994 0.067431 -0.085449" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="spine_default_1.stl" />
             <body name="servo_roulis_torse" pos="0.0334 0.001747 0.038861" quat="1.0 0.0 0.0 0.0">
-              <joint name="rotation_roulis_torse" type="hinge" range="-0.436332 0.959931" axis="1.0 0.0 0.0" />
-              <inertial pos="-0.018113958627718682 -2.3729273459310862e-05 0.013877191834498925" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.2e-05 9.9e-05 5.8e-05" />
+              <joint name="rotation_roulis_torse" class="sts3215" type="hinge" range="-0.436332 0.959931" axis="1.0 0.0 0.0" />
+              <inertial pos="-0.018113958627718682 -2.3729273459310862e-05 0.013877191834498925" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.2e-05 9.9e-05 5.8e-05" />
               <geom name="servo_sts3215_v1__1__1_collision_0" pos="-0.018406 0.065684 -0.12431" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__1__1.stl" rgba="0 0 0 0" />
               <geom name="servo_sts3215_v1__1__1_visual_0" pos="-0.018406 0.065684 -0.12431" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__1__1.stl" />
               <body name="double_rotation_link_double_feetech_v1_1" pos="-0.00455 0.014996 0.014086" quat="1.0 0.0 0.0 0.0">
-                <inertial pos="0.002024750176840232 0.003710607069467957 -0.008500173682925022" quat="1.0 0.0 0.0 0.0" mass="0.010490141865992935" diaginertia="1e-06 1e-06 0.0" />
+                <inertial pos="0.002024750176840232 0.003710607069467957 -0.008500173682925022" quat="1.0 0.0 0.0 0.0" mass="0.010" diaginertia="1e-06 1e-06 0.0" />
                 <geom name="double_rotation_link_double_feetech_v1_1_collision_0" pos="-0.013856 0.050688 -0.138396" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="double_rotation_link_double_feetech_v1_1.stl" rgba="0 0 0 0" />
                 <geom name="double_rotation_link_double_feetech_v1_1_visual_0" pos="-0.013856 0.050688 -0.138396" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="double_rotation_link_double_feetech_v1_1.stl" />
                 <body name="servo_sts3215_v1__2__1" pos="-0.0001 0.0069 -0.017" quat="1.0 0.0 0.0 0.0">
-                  <inertial pos="-0.014980074180713072 0.016417183569695955 0.01679119183449934" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
+                  <inertial pos="-0.014980074180713072 0.016417183569695955 0.01679119183449934" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
                   <geom name="servo_sts3215_v1__2__1_collision_0" pos="-0.013756 0.043788 -0.121396" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__2__1.stl" rgba="0 0 0 0" />
                   <geom name="servo_sts3215_v1__2__1_visual_0" pos="-0.013756 0.043788 -0.121396" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__2__1.stl" />
                   <body name="poitrine" pos="-0.015004 0.034532 0.002914" quat="1.0 0.0 0.0 0.0">
-                    <joint name="rotation_tangage_torse" type="hinge" range="-0.698132 0.785398" axis="0.0 -1.0 0.0" />
-                    <inertial pos="0.00015427959004198446 -0.03577287736870712 0.04773966957719847" quat="1.0 0.0 0.0 0.0" mass="0.5907354450700422" diaginertia="0.000783 0.001095 0.001456" />
+                    <joint name="rotation_tangage_torse" class="sts3215" type="hinge" range="-0.698132 0.785398" axis="0.0 -1.0 0.0" />
+                    <inertial pos="0.00015427959004198446 -0.03577287736870712 0.04773966957719847" quat="1.0 0.0 0.0 0.0" mass="0.250" diaginertia="0.000783 0.001095 0.001456" />
                     <geom name="chest_1_collision_0" pos="0.001248 0.009256 -0.12431" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="chest_1.stl" rgba="0 0 0 0" />
                     <geom name="chest_1_visual_0" pos="0.001248 0.009256 -0.12431" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="chest_1.stl" />
                     <body name="servo_sts3215_v1__3__1" pos="0.072458 -0.189067 -0.071966" quat="1.0 0.0 0.0 0.0">
-                      <inertial pos="-0.012768569454018337 0.14162474034428557 0.12350985679084983" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
+                      <inertial pos="-0.012768569454018337 0.14162474034428557 0.12350985679084983" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
                       <geom name="servo_sts3215_v1__3__1_collision_0" pos="-0.07121 0.198323 -0.052344" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__3__1.stl" rgba="0 0 0 0" />
                       <geom name="servo_sts3215_v1__3__1_visual_0" pos="-0.07121 0.198323 -0.052344" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__3__1.stl" />
                       <body name="epaule_gauche" pos="0.005346 0.127748 0.123486" quat="1.0 0.0 0.0 0.0">
-                        <joint name="rotation_epaule_zy_gauche" type="hinge" range="-0.96 3.926991" axis="-1.0 0.0 -0.0" />
-                        <inertial pos="0.013069081541579305 0.007818922979524329 0.0014314415043581996" quat="1.0 0.0 0.0 0.0" mass="0.08997068728227473" diaginertia="3.4e-05 2.1e-05 3.9e-05" />
+                        <joint name="rotation_epaule_zy_gauche" class="sts3215" type="hinge" range="-0.96 3.926991" axis="-1.0 0.0 -0.0" />
+                        <inertial pos="0.013069081541579305 0.007818922979524329 0.0014314415043581996" quat="1.0 0.0 0.0 0.0" mass="0.030" diaginertia="3.4e-05 2.1e-05 3.9e-05" />
                         <geom name="shoulder_left_v1_1_collision_0" pos="-0.076556 0.070575 -0.17583" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="shoulder_left_v1_1.stl" rgba="0 0 0 0" />
                         <geom name="shoulder_left_v1_1_visual_0" pos="-0.076556 0.070575 -0.17583" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="shoulder_left_v1_1.stl" />
                         <body name="servo_epaule_xy_gauche" pos="0.03009 -0.009968 -8e-06" quat="1.0 0.0 0.0 0.0">
-                          <joint name="rotation_epaule_xy_gauche" type="hinge" range="-1.80 1.67" axis="-0.0 -1.0 0.0" />
-                          <inertial pos="0.01387684152521737 0.018114728191638348 2.3728104074888234e-05" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="5.8e-05 9.2e-05 9.9e-05" />
+                          <joint name="rotation_epaule_xy_gauche" class="sts3215" type="hinge" range="-1.80 1.67" axis="-0.0 -1.0 0.0" />
+                          <inertial pos="0.01387684152521737 0.018114728191638348 2.3728104074888234e-05" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="5.8e-05 9.2e-05 9.9e-05" />
                           <geom name="servo_sts3215_v1__9__1_collision_0" pos="-0.106646 0.080543 -0.175822" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__9__1.stl" rgba="0 0 0 0" />
                           <geom name="servo_sts3215_v1__9__1_visual_0" pos="-0.106646 0.080543 -0.175822" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__9__1.stl" />
                           <body name="arm_connector_Feetech_v1__1__1" pos="-0.131532 -0.148625 0.075992" quat="1.0 0.0 0.0 0.0">
-                            <inertial pos="0.17019711259990794 0.1701672691210283 -0.07599164900255378" quat="1.0 0.0 0.0 0.0" mass="0.05074794859181044" diaginertia="1.7e-05 9e-06 1e-05" />
+                            <inertial pos="0.17019711259990794 0.1701672691210283 -0.07599164900255378" quat="1.0 0.0 0.0 0.0" mass="0.020" diaginertia="1.7e-05 9e-06 1e-05" />
                             <geom name="arm_connector_Feetech_v1__1__1_collision_0" pos="0.024886 0.229168 -0.251814" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="arm_connector_Feetech_v1__1__1.stl" rgba="0 0 0 0" />
                             <geom name="arm_connector_Feetech_v1__1__1_visual_0" pos="0.024886 0.229168 -0.251814" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="arm_connector_Feetech_v1__1__1.stl" />
                             <body name="servo_biceps_gauche" pos="0.175717 0.178097 -0.076092" quat="1.0 0.0 0.0 0.0">
-                              <joint name="rotation_biceps_gauche" type="hinge" range="-1.570796 1.658063" axis="-1.0 0.0 0.0" />
-                              <inertial pos="0.01811490301050525 -0.013877229014664351 2.404053025442665e-05" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
+                              <joint name="rotation_biceps_gauche" class="sts3215" type="hinge" range="-1.570796 1.658063" axis="-1.0 0.0 0.0" />
+                              <inertial pos="0.01811490301050525 -0.013877229014664351 2.404053025442665e-05" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
                               <geom name="servo_sts3215_v1__10__1_collision_0" pos="-0.150831 0.051071 -0.175722" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__10__1.stl" rgba="0 0 0 0" />
                               <geom name="servo_sts3215_v1__10__1_visual_0" pos="-0.150831 0.051071 -0.175722" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__10__1.stl" />
                               <body name="upper_arm_double_right_v1__1__1" pos="-0.172025 0.142882 0.082157" quat="1.0 0.0 0.0 0.0">
-                                <inertial pos="0.22087327265401402 -0.15592362178307972 -0.08201641031321949" quat="1.0 0.0 0.0 0.0" mass="0.13694142926786174" diaginertia="8.4e-05 0.00017 0.000183" />
+                                <inertial pos="0.22087327265401402 -0.15592362178307972 -0.08201641031321949" quat="1.0 0.0 0.0 0.0" mass="0.070" diaginertia="8.4e-05 0.00017 0.000183" />
                                 <geom name="upper_arm_double_right_v1__1__1_collision_0" pos="0.021194 -0.091811 -0.257879" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="upper_arm_double_right_v1__1__1.stl" rgba="0 0 0 0" />
                                 <geom name="upper_arm_double_right_v1__1__1_visual_0" pos="0.021194 -0.091811 -0.257879" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="upper_arm_double_right_v1__1__1.stl" />
                                 <body name="servo_sts3215_v1__11__1" pos="0.241626 -0.145968 -0.066944" quat="1.0 0.0 0.0 0.0">
-                                  <inertial pos="0.023508770620472463 -0.008519981071643715 -0.013563488463505524" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="5.8e-05 9.9e-05 9.2e-05" />
+                                  <inertial pos="0.023508770620472463 -0.008519981071643715 -0.013563488463505524" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="5.8e-05 9.9e-05 9.2e-05" />
                                   <geom name="servo_sts3215_v1__11__1_collision_0" pos="-0.220432 0.054157 -0.190935" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__11__1.stl" rgba="0 0 0 0" />
                                   <geom name="servo_sts3215_v1__11__1_visual_0" pos="-0.220432 0.054157 -0.190935" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__11__1.stl" />
                                   <body name="avant_bras_gauche" pos="0.037386 -0.008496 0.004551" quat="1.0 0.0 0.0 0.0">
-                                    <joint name="rotation_coude_gauche" type="hinge" range="0.0 2.40" axis="0.0 -0.0 -1.0" />
-                                    <inertial pos="0.04401274040087039 0.008650758693461914 -0.013814967864695243" quat="1.0 0.0 0.0 0.0" mass="0.186625466869739" diaginertia="7.3e-05 0.000311 0.000295" />
+                                    <joint name="rotation_coude_gauche" class="sts3215" type="hinge" range="0.0 2.40" axis="0.0 -0.0 -1.0" />
+                                    <inertial pos="0.04401274040087039 0.008650758693461914 -0.013814967864695243" quat="1.0 0.0 0.0 0.0" mass="0.080" diaginertia="7.3e-05 0.000311 0.000295" />
                                     <geom name="avant_bras_left_1_collision_0" pos="-0.257818 0.062653 -0.195486" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="avant_bras_left_1.stl" rgba="0 0 0 0" />
                                     <geom name="avant_bras_left_1_visual_0" pos="-0.257818 0.062653 -0.195486" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="avant_bras_left_1.stl" />
                                     <body name="servo_sts3215_v1__12__1" pos="0.073594 0.204126 -0.366567" quat="1.0 0.0 0.0 0.0">
-                                      <inertial pos="0.03147486599174237 -0.2013020696547163 0.3583558952391649" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
+                                      <inertial pos="0.03147486599174237 -0.2013020696547163 0.3583558952391649" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
                                       <geom name="servo_sts3215_v1__12__1_collision_0" pos="-0.331412 -0.141473 0.171081" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__12__1.stl" rgba="0 0 0 0" />
                                       <geom name="servo_sts3215_v1__12__1_visual_0" pos="-0.331412 -0.141473 0.171081" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__12__1.stl" />
                                       <body name="main_gauche" pos="0.031451 -0.219416 0.372233" quat="1.0 0.0 0.0 0.0">
-                                        <joint name="rotation_pince_gauche" type="hinge" range="-1.570796 0.401426" axis="0.0 1.0 -0.0" />
-                                        <inertial pos="0.03632040746598875 0.018552363625857257 0.005882952672508379" quat="1.0 0.0 0.0 0.0" mass="0.2802698772366261" diaginertia="7.9e-05 0.000109 0.000166" />
+                                        <joint name="rotation_pince_gauche" class="sts3215" type="hinge" range="-1.570796 0.401426" axis="0.0 1.0 -0.0" />
+                                        <inertial pos="0.03632040746598875 0.018552363625857257 0.005882952672508379" quat="1.0 0.0 0.0 0.0" mass="0.080" diaginertia="7.9e-05 0.000109 0.000166" />
                                         <geom name="Prehenseur_fifty_fifty_Main_right_v1__1__1_collision_0" pos="-0.362863 0.077943 -0.201152" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" rgba="0 0 0 0" />
                                         <geom name="Prehenseur_fifty_fifty_Main_right_v1__1__1_visual_0" pos="-0.362863 0.077943 -0.201152" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1__1__1.stl" />
                                       </body>
                                       <body name="Prehenseur_fifty_fifty_Pousse_right_v1__1__1" pos="0.104844 -0.364483 0.7141" quat="1.0 0.0 0.0 0.0">
-                                        <inertial pos="-0.04738040301219948 0.1644526771798254 -0.38698301391426126" quat="1.0 0.0 0.0 0.0" mass="0.21023886280433182" diaginertia="2.9e-05 9.5e-05 0.000118" />
+                                        <inertial pos="-0.04738040301219948 0.1644526771798254 -0.38698301391426126" quat="1.0 0.0 0.0 0.0" mass="0.050" diaginertia="2.9e-05 9.5e-05 0.000118" />
                                         <geom name="Prehenseur_fifty_fifty_Pousse_right_v1__1__1_collision_0" pos="-0.436256 0.22301 -0.543019" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" rgba="0 0 0 0" />
                                         <geom name="Prehenseur_fifty_fifty_Pousse_right_v1__1__1_visual_0" pos="-0.436256 0.22301 -0.543019" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1__1__1.stl" />
                                       </body>
@@ -152,53 +152,53 @@
                       </body>
                     </body>
                     <body name="servo_sts3215_v1__4__1" pos="-0.075142 -0.189067 -0.071966" quat="1.0 0.0 0.0 0.0">
-                      <inertial pos="0.01535895970710844 0.14162474034429673 0.12346961705796619" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
+                      <inertial pos="0.01535895970710844 0.14162474034429673 0.12346961705796619" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
                       <geom name="servo_sts3215_v1__4__1_collision_0" pos="0.07639 0.198323 -0.052344" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__4__1.stl" rgba="0 0 0 0" />
                       <geom name="servo_sts3215_v1__4__1_visual_0" pos="0.07639 0.198323 -0.052344" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__4__1.stl" />
                       <body name="epaule_droite" pos="-0.002755 0.127748 0.123494" quat="1.0 0.0 0.0 0.0">
-                        <joint name="rotation_epaule_zy_droite" type="hinge" range="-3.93 0.959931" axis="1.0 -0.0 -0.0" />
-                        <inertial pos="-0.01306709110545963 0.007820696038384783 0.0014317075357701825" quat="1.0 0.0 0.0 0.0" mass="0.0899660706083263" diaginertia="3.4e-05 2.1e-05 3.9e-05" />
+                        <joint name="rotation_epaule_zy_droite" class="sts3215" type="hinge" range="-3.93 0.959931" axis="1.0 -0.0 -0.0" />
+                        <inertial pos="-0.01306709110545963 0.007820696038384783 0.0014317075357701825" quat="1.0 0.0 0.0 0.0" mass="0.030" diaginertia="3.4e-05 2.1e-05 3.9e-05" />
                         <geom name="shoulder_right_v1_1_collision_0" pos="0.079145 0.070575 -0.175838" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="shoulder_right_v1_1.stl" rgba="0 0 0 0" />
                         <geom name="shoulder_right_v1_1_visual_0" pos="0.079145 0.070575 -0.175838" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="shoulder_right_v1_1.stl" />
                         <body name="servo_epaule_xy_droite" pos="-0.03009 -0.009968 -8e-06" quat="1.0 0.0 0.0 0.0">
-                          <joint name="rotation_epaule_xy_droite" type="hinge" range="-1.80 1.67" axis="0.0 1.0 -0.0" />
-                          <inertial pos="-0.013877451272128485 0.01811472819166042 -2.4511628808843167e-05" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="5.8e-05 9.2e-05 9.9e-05" />
+                          <joint name="rotation_epaule_xy_droite" class="sts3215" type="hinge" range="-1.80 1.67" axis="0.0 1.0 -0.0" />
+                          <inertial pos="-0.013877451272128485 0.01811472819166042 -2.4511628808843167e-05" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="5.8e-05 9.2e-05 9.9e-05" />
                           <geom name="servo_sts3215_v1__5__1_collision_0" pos="0.109235 0.080543 -0.17583" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__5__1.stl" rgba="0 0 0 0" />
                           <geom name="servo_sts3215_v1__5__1_visual_0" pos="0.109235 0.080543 -0.17583" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__5__1.stl" />
                           <body name="arm_connector_Feetech_v1_1" pos="-0.159121 -0.148625 -0.075992" quat="1.0 0.0 0.0 0.0">
-                            <inertial pos="0.12045527765318095 0.17016726912105506 0.07599086547781965" quat="1.0 0.0 0.0 0.0" mass="0.05074794859181044" diaginertia="1.7e-05 9e-06 1e-05" />
+                            <inertial pos="0.12045527765318095 0.17016726912105506 0.07599086547781965" quat="1.0 0.0 0.0 0.0" mass="0.020" diaginertia="1.7e-05 9e-06 1e-05" />
                             <geom name="arm_connector_Feetech_v1_1_collision_0" pos="0.268356 0.229168 -0.099838" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="arm_connector_Feetech_v1_1.stl" rgba="0 0 0 0" />
                             <geom name="arm_connector_Feetech_v1_1_visual_0" pos="0.268356 0.229168 -0.099838" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="arm_connector_Feetech_v1_1.stl" />
                             <body name="servo_biceps_droit" pos="0.114935 0.178097 0.076091" quat="1.0 0.0 0.0 0.0">
-                              <joint name="rotation_biceps_droit" type="hinge" range="-1.745329 1.745329" axis="1.0 -0.0 0.0" />
-                              <inertial pos="-0.018114512757417434 -0.01387722901463357 -2.3824054988352827e-05" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
+                              <joint name="rotation_biceps_droit" class="sts3215" type="hinge" range="-1.745329 1.745329" axis="1.0 -0.0 0.0" />
+                              <inertial pos="-0.018114512757417434 -0.01387722901463357 -2.3824054988352827e-05" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.2e-05 5.8e-05 9.9e-05" />
                               <geom name="servo_sts3215_v1__6__1_collision_0" pos="0.153421 0.051071 -0.175929" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__6__1.stl" rgba="0 0 0 0" />
                               <geom name="servo_sts3215_v1__6__1_visual_0" pos="0.153421 0.051071 -0.175929" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__6__1.stl" />
                               <body name="upper_arm_double_right_v1_1" pos="0.172225 -0.170472 -0.065156" quat="1.0 0.0 0.0 0.0">
-                                <inertial pos="-0.22107288240092587 0.15743037821695768 0.0650156267884857" quat="1.0 0.0 0.0 0.0" mass="0.13694142926786174" diaginertia="8.4e-05 0.00017 0.000183" />
+                                <inertial pos="-0.22107288240092587 0.15743037821695768 0.0650156267884857" quat="1.0 0.0 0.0 0.0" mass="0.070" diaginertia="8.4e-05 0.00017 0.000183" />
                                 <geom name="upper_arm_double_right_v1_1_collision_0" pos="-0.018804 0.221543 -0.110773" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="upper_arm_double_right_v1_1.stl" rgba="0 0 0 0" />
                                 <geom name="upper_arm_double_right_v1_1_visual_0" pos="-0.018804 0.221543 -0.110773" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="upper_arm_double_right_v1_1.stl" />
                                 <body name="servo_sts3215_v1__7__1" pos="-0.248126 0.145236 0.080352" quat="1.0 0.0 0.0 0.0">
-                                  <inertial pos="-0.017208380367383813 0.015020258661285056 -0.01356346876911077" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="5.8e-05 9.9e-05 9.2e-05" />
+                                  <inertial pos="-0.017208380367383813 0.015020258661285056 -0.01356346876911077" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="5.8e-05 9.9e-05 9.2e-05" />
                                   <geom name="servo_sts3215_v1__7__1_collision_0" pos="0.229322 0.076307 -0.191125" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__7__1.stl" rgba="0 0 0 0" />
                                   <geom name="servo_sts3215_v1__7__1_visual_0" pos="0.229322 0.076307 -0.191125" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__7__1.stl" />
                                   <body name="avant_bras_droit" pos="-0.031085 0.014996 0.004551" quat="1.0 0.0 0.0 0.0">
-                                    <joint name="rotation_coude_droit" type="hinge" range="-2.4 0.0" axis="-0.0 -0.0 -1.0" />
-                                    <inertial pos="-0.04401322687622705 0.008650797389780515 -0.013814355351612906" quat="1.0 0.0 0.0 0.0" mass="0.18662199745727184" diaginertia="7.3e-05 0.000311 0.000295" />
+                                    <joint name="rotation_coude_droit" class="sts3215" type="hinge" range="-2.4 0.0" axis="-0.0 -0.0 -1.0" />
+                                    <inertial pos="-0.04401322687622705 0.008650797389780515 -0.013814355351612906" quat="1.0 0.0 0.0 0.0" mass="0.080" diaginertia="7.3e-05 0.000311 0.000295" />
                                     <geom name="avant_bras_right_v1_1_collision_0" pos="0.260407 0.061311 -0.195676" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="avant_bras_right_v1_1.stl" rgba="0 0 0 0" />
                                     <geom name="avant_bras_right_v1_1_visual_0" pos="0.260407 0.061311 -0.195676" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="avant_bras_right_v1_1.stl" />
                                     <body name="servo_sts3215_v1__8__1" pos="-0.090049 -0.01094 0.00858" quat="1.0 0.0 0.0 0.0">
-                                      <inertial pos="-0.014980236005768921 0.01356378910879575 -0.016791085066439754" quat="1.0 0.0 0.0 0.0" mass="0.34332301760825074" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
+                                      <inertial pos="-0.014980236005768921 0.01356378910879575 -0.016791085066439754" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="9.9e-05 9.2e-05 5.8e-05" />
                                       <geom name="servo_sts3215_v1__8__1_collision_0" pos="0.350456 0.072251 -0.204256" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215_v1__8__1.stl" rgba="0 0 0 0" />
                                       <geom name="servo_sts3215_v1__8__1_visual_0" pos="0.350456 0.072251 -0.204256" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215_v1__8__1.stl" />
                                       <body name="Prehenseur_fifty_fifty_Pousse_right_v1_1" pos="0.057247 -0.149807 -0.37237" quat="1.0 0.0 0.0 0.0">
-                                        <inertial pos="-0.09825620673470975 0.16512151311312523 0.3243400057801342" quat="1.0 0.0 0.0 0.0" mass="0.21023886280433182" diaginertia="2.9e-05 9.5e-05 0.000118" />
+                                        <inertial pos="-0.09825620673470975 0.16512151311312523 0.3243400057801342" quat="1.0 0.0 0.0 0.0" mass="0.050" diaginertia="2.9e-05 9.5e-05 0.000118" />
                                         <geom name="Prehenseur_fifty_fifty_Pousse_right_v1_1_collision_0" pos="0.293209 0.222058 0.168114" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" rgba="0 0 0 0" />
                                         <geom name="Prehenseur_fifty_fifty_Pousse_right_v1_1_visual_0" pos="0.293209 0.222058 0.168114" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="Prehenseur_fifty_fifty_Pousse_right_v1_1.stl" />
                                       </body>
                                       <body name="main_droite" pos="-0.015004 -0.004551 -0.002914" quat="1.0 0.0 0.0 0.0">
-                                        <joint name="rotation_pince_droite" type="hinge" range="-0.401426 1.745329" axis="0.0 1.0 -0.0" />
-                                        <inertial pos="-0.03631683785255063 0.018447497238708865 0.005876678058039098" quat="1.0 0.0 0.0 0.0" mass="0.2802698772366261" diaginertia="7.9e-05 0.000109 0.000166" />
+                                        <joint name="rotation_pince_droite" class="sts3215" type="hinge" range="-0.401426 1.745329" axis="0.0 1.0 -0.0" />
+                                        <inertial pos="-0.03631683785255063 0.018447497238708865 0.005876678058039098" quat="1.0 0.0 0.0 0.0" mass="0.080" diaginertia="7.9e-05 0.000109 0.000166" />
                                         <geom name="Prehenseur_fifty_fifty_Main_right_v1_1_collision_0" pos="0.36546 0.076802 -0.201342" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1_1.stl" rgba="0 0 0 0" />
                                         <geom name="Prehenseur_fifty_fifty_Main_right_v1_1_visual_0" pos="0.36546 0.076802 -0.201342" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="Prehenseur_fifty_fifty_Main_right_v1_1.stl" />
                                       </body>
@@ -212,29 +212,29 @@
                       </body>
                     </body>
                     <body name="servo_sts3215-2_1" pos="-0.010281 -0.052439 0.047526" quat="1.0 0.0 0.0 0.0">
-                      <inertial pos="0.010250157404470425 0.004721873144410249 0.016400350717485745" quat="1.0 0.0 0.0 0.0" mass="0.2747881442151801" diaginertia="7.1e-05 3.8e-05 6e-05" />
+                      <inertial pos="0.010250157404470425 0.004721873144410249 0.016400350717485745" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="7.1e-05 3.8e-05 6e-05" />
                       <geom name="servo_sts3215-2_1_collision_0" pos="0.011529 0.061695 -0.171836" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo_sts3215-2_1.stl" rgba="0 0 0 0" />
                       <geom name="servo_sts3215-2_1_visual_0" pos="0.011529 0.061695 -0.171836" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo_sts3215-2_1.stl" />
                       <body name="cou" pos="0.01025 -0.0083 0.0346" quat="1.0 0.0 0.0 0.0">
-                        <joint name="rotation_cou_zx" type="hinge" range="-1.832596 1.919862" axis="-0.0 -0.0 -1.0" />
-                        <inertial pos="0.0007485223224610761 -9.349216530497861e-05 0.01047807820130392" quat="1.0 0.0 0.0 0.0" mass="0.056145921126082916" diaginertia="7e-06 2.5e-05 2.2e-05" />
+                        <joint name="rotation_cou_zx" class="sts3215" type="hinge" range="-1.832596 1.919862" axis="-0.0 -0.0 -1.0" />
+                        <inertial pos="0.0007485223224610761 -9.349216530497861e-05 0.01047807820130392" quat="1.0 0.0 0.0 0.0" mass="0.035" diaginertia="7e-06 2.5e-05 2.2e-05" />
                         <geom name="neck_v2_1_collision_0" pos="0.001279 0.069995 -0.206436" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="neck_v2_1.stl" rgba="0 0 0 0" />
                         <geom name="neck_v2_1_visual_0" pos="0.001279 0.069995 -0.206436" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="neck_v2_1.stl" />
                         <body name="tete" pos="0.017831 0.000119 0.020034" quat="1.0 0.0 0.0 0.0">
-                          <joint name="rotation_cou_yx" type="hinge" range="-0.45 0.40" axis="1.0 -0.0 -0.0" />
-                          <inertial pos="-0.018200236746651933 0.01185966221025403 0.005376001252874213" quat="1.0 0.0 0.0 0.0" mass="0.2747881442151801" diaginertia="6e-05 4.3e-05 6.5e-05" />
+                          <joint name="rotation_cou_yx" class="sts3215" type="hinge" range="-0.45 0.40" axis="1.0 -0.0 -0.0" />
+                          <inertial pos="-0.018200236746651933 0.01185966221025403 0.005376001252874213" quat="1.0 0.0 0.0 0.0" mass="0.063" diaginertia="6e-05 4.3e-05 6.5e-05" />
                           <geom name="tete_collision_0" pos="-0.016552 0.069876 -0.22647" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="servo-sts3215-2_1.stl" rgba="0 0 0 0" />
                           <geom name="tete_visual_0" pos="-0.016552 0.069876 -0.22647" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="servo-sts3215-2_1.stl" />
                           <body name="head_back_v2_1" pos="0.220532 -0.028617 0.060095" quat="1.0 0.0 0.0 0.0">
-                            <inertial pos="-0.2399997142999622 0.06546375235283343 -0.019336533745128448" quat="1.0 0.0 0.0 0.0" mass="0.5424516303112991" diaginertia="0.00084 0.001375 0.001028" />
+                            <inertial pos="-0.2399997142999622 0.06546375235283343 -0.019336533745128448" quat="1.0 0.0 0.0 0.0" mass="0.150" diaginertia="0.00084 0.001375 0.001028" />
                             <geom name="head_back_v2_1_collision_0" pos="-0.237084 0.098493 -0.286565" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="head_back_v2_1.stl" rgba="0 0 0 0" />
                             <geom name="head_back_v2_1_visual_0" pos="-0.237084 0.098493 -0.286565" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="head_back_v2_1.stl" />
                             <body name="head_face" pos="-0.239834 0.038658 0.032147" quat="1.0 0.0 0.0 0.0">
-                              <inertial pos="-4.459929631812562e-08 -0.028186198727073175 -0.056621570075358396" quat="1.0 0.0 0.0 0.0" mass="0.3123301638656947" diaginertia="0.000531 0.001043 0.000671" />
+                              <inertial pos="-4.459929631812562e-08 -0.028186198727073175 -0.056621570075358396" quat="1.0 0.0 0.0 0.0" mass="0.100" diaginertia="0.000531 0.001043 0.000671" />
                               <geom name="head_face_collision_0" pos="0.00275 0.059835 -0.318712" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="head_face_v1_1.stl" rgba="0 0 0 0" />
                               <geom name="head_face_visual_0" pos="0.00275 0.059835 -0.318712" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="head_face_v1_1.stl" />
                               <body name="screen_v1_1" pos="-0.002749 -0.312936 -0.210216" quat="1.0 0.0 0.0 0.0">
-                                <inertial pos="0.0027494900833098072 0.2744593858544422 0.16906337877995842" quat="1.0 0.0 0.0 0.0" mass="0.05357645890624925" diaginertia="1.5e-05 7.3e-05 5.8e-05" />
+                                <inertial pos="0.0027494900833098072 0.2744593858544422 0.16906337877995842" quat="1.0 0.0 0.0 0.0" mass="0.060" diaginertia="1.5e-05 7.3e-05 5.8e-05" />
                                 <geom name="screen_v1_1_collision_0" pos="0.005499 0.372771 -0.108496" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="screen_v1_1.stl" rgba="0 0 0 0" />
                                 <geom name="screen_v1_1_visual_0" pos="0.005499 0.372771 -0.108496" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="screen_v1_1.stl" />
                               </body>
@@ -247,7 +247,7 @@
                 </body>
               </body>
               <body name="double_rotation_link_double_feetech_v1__1__1" pos="-0.034531 0.014996 -0.002914" quat="1.0 0.0 0.0 0.0">
-                <inertial pos="-0.0020246958284255816 0.003710607069468068 0.008499821732979834" quat="1.0 0.0 0.0 0.0" mass="0.010490141865992935" diaginertia="1e-06 1e-06 0.0" />
+                <inertial pos="-0.0020246958284255816 0.003710607069468068 0.008499821732979834" quat="1.0 0.0 0.0 0.0" mass="0.010" diaginertia="1e-06 1e-06 0.0" />
                 <geom name="double_rotation_link_double_feetech_v1__1__1_collision_0" pos="0.016125 0.050688 -0.121396" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="double_rotation_link_double_feetech_v1__1__1.stl" rgba="0 0 0 0" />
                 <geom name="double_rotation_link_double_feetech_v1__1__1_visual_0" pos="0.016125 0.050688 -0.121396" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="double_rotation_link_double_feetech_v1__1__1.stl" />
               </body>
@@ -259,21 +259,21 @@
   </worldbody>
 
   <actuator>
-    <position name="act_taille" joint="rotation_taille" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.95 1.95" ctrllimited="true" />
-    <position name="act_roulis_torse" joint="rotation_roulis_torse" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-0.436332 0.959931" ctrllimited="true" />
-    <position name="act_tangage_torse" joint="rotation_tangage_torse" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-0.698132 0.785398" ctrllimited="true" />
-    <position name="act_epaule_zy_gauche" joint="rotation_epaule_zy_gauche" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-0.96 3.926991" ctrllimited="true" />
-    <position name="act_epaule_xy_gauche" joint="rotation_epaule_xy_gauche" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.8 1.67" ctrllimited="true" />
-    <position name="act_biceps_gauche" joint="rotation_biceps_gauche" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.570796 1.658063" ctrllimited="true" />
-    <position name="act_coude_gauche" joint="rotation_coude_gauche" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="0.0 2.4" ctrllimited="true" />
-    <position name="act_pince_gauche" joint="rotation_pince_gauche" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.570796 0.401426" ctrllimited="true" />
-    <position name="act_epaule_zy_droite" joint="rotation_epaule_zy_droite" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-3.93 0.959931" ctrllimited="true" />
-    <position name="act_epaule_xy_droite" joint="rotation_epaule_xy_droite" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.8 1.67" ctrllimited="true" />
-    <position name="act_biceps_droit" joint="rotation_biceps_droit" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.745329 1.745329" ctrllimited="true" />
-    <position name="act_coude_droit" joint="rotation_coude_droit" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-2.4 0.0" ctrllimited="true" />
-    <position name="act_pince_droite" joint="rotation_pince_droite" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-0.401426 1.745329" ctrllimited="true" />
-    <position name="act_cou_zx" joint="rotation_cou_zx" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-1.832596 1.919862" ctrllimited="true" />
-    <position name="act_cou_yx" joint="rotation_cou_yx" forcerange="-100.00000000 100.00000000" forcelimited="true" ctrlrange="-0.45 0.4" ctrllimited="true" />
+    <position name="act_taille" class="sts3215" joint="rotation_taille" ctrlrange="-1.95 1.95" ctrllimited="true" />
+    <position name="act_roulis_torse" class="sts3215" joint="rotation_roulis_torse" ctrlrange="-0.436332 0.959931" ctrllimited="true" />
+    <position name="act_tangage_torse" class="sts3215" joint="rotation_tangage_torse" ctrlrange="-0.698132 0.785398" ctrllimited="true" />
+    <position name="act_epaule_zy_gauche" class="sts3215" joint="rotation_epaule_zy_gauche" ctrlrange="-0.96 3.926991" ctrllimited="true" />
+    <position name="act_epaule_xy_gauche" class="sts3215" joint="rotation_epaule_xy_gauche" ctrlrange="-1.8 1.67" ctrllimited="true" />
+    <position name="act_biceps_gauche" class="sts3215" joint="rotation_biceps_gauche" ctrlrange="-1.570796 1.658063" ctrllimited="true" />
+    <position name="act_coude_gauche" class="sts3215" joint="rotation_coude_gauche" ctrlrange="0.0 2.4" ctrllimited="true" />
+    <position name="act_pince_gauche" class="sts3215" joint="rotation_pince_gauche" ctrlrange="-1.570796 0.401426" ctrllimited="true" />
+    <position name="act_epaule_zy_droite" class="sts3215" joint="rotation_epaule_zy_droite" ctrlrange="-3.93 0.959931" ctrllimited="true" />
+    <position name="act_epaule_xy_droite" class="sts3215" joint="rotation_epaule_xy_droite" ctrlrange="-1.8 1.67" ctrllimited="true" />
+    <position name="act_biceps_droit" class="sts3215" joint="rotation_biceps_droit" ctrlrange="-1.745329 1.745329" ctrllimited="true" />
+    <position name="act_coude_droit" class="sts3215" joint="rotation_coude_droit" ctrlrange="-2.4 0.0" ctrllimited="true" />
+    <position name="act_pince_droite" class="sts3215" joint="rotation_pince_droite" ctrlrange="-0.401426 1.745329" ctrllimited="true" />
+    <position name="act_cou_zx" class="sts3215" joint="rotation_cou_zx" ctrlrange="-1.832596 1.919862" ctrllimited="true" />
+    <position name="act_cou_yx" class="sts3215" joint="rotation_cou_yx" ctrlrange="-0.45 0.4" ctrllimited="true" />
   </actuator>
 
   <sensor>
