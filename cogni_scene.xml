@@ -9,7 +9,7 @@
     </default>
   </default>
 
-  <compiler angle="radian" meshdir="/home/punchnox/Bureau/Cogni-robot/Cogni-IK/models/Cogni-urdf/meshes" discardvisual="false"/>
+  <compiler angle="radian" meshdir="/home/samuel/Bureau/Cogni-Project/Cogni-IK/models/Cogni-urdf/meshes" discardvisual="false"/>
   <option timestep="0.001" integrator="RK4"/>
   
   <asset>
