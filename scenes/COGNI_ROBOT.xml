@@ -56,9 +56,8 @@
     <!-- Robot -->
     <body name="root" pos="0 0 1.1102230246251565e-16" quat="1 0 0 0">
       <site name="root_site" pos="0 0 0" quat="1 0 0 0" />
-
       <!-- Position de la base du robot -->
-      <body name="base_link" pos="0.3 0.2 0.465" quat="1 0 0 0">
+      <body name="base_link" pos="0 0 0.045" quat="1 0 0 0">
         <inertial pos="-1.1219501603328655e-05 -0.056526453492820504 -0.007126953017833521" quat="1.0 0.0 0.0 0.0" mass="1.000" diaginertia="0.002516 0.00237 0.002929" />
         <geom name="base_link_collision_0" pos="0 0 0" quat="1.0 0.0 0.0 0.0" type="mesh" mesh="base_link.stl" rgba="0 0 0 0" />
         <geom name="base_link_visual_0" pos="0 0 0" quat="1.0 0.0 0.0 0.0" material="default_material" type="mesh" mesh="base_link.stl" />
