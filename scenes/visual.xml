@@ -1,0 +1,19 @@
+<mujoco>
+  <visual>
+    <!-- Haute résolution d'ombres -->
+    <quality shadowsize="4096" numslices="28"/>
+    <!-- Headlight compatible avec la version MuJoCo installée -->
+    <headlight active="1"/>
+  </visual>
+
+  <asset>
+    <!-- Ciel en dégradé bleu/noir -->
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="512"/>
+    
+    <!-- Texture procédurale en damier pour le sol -->
+    <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
+    
+    <!-- Matériau final du sol, légèrement brillant -->
+    <material name="matplane" reflectance="0.2" shininess="0.1" specular="0.1" texture="texplane" texrepeat="5 5" texuniform="true"/>
+  </asset>
+</mujoco>
