@@ -1,0 +1,25 @@
+<mujoco model="scene_bouteille">
+  <!-- 1. On importe le robot complet -->
+  <include file="COGNI_ROBOT.xml"/>
+
+
+  <worldbody>
+    <!-- Lumière et Sol -->
+    <light directional="true" pos="0 0 5" dir="0 0 -1" />
+    <geom name="ground" type="plane" size="5 5 0.01" rgba="0.8 0.8 0.8 1" />
+
+<!-- 1. La Table -->
+    <body name="table" pos="0.3 0 0.4">
+      <!-- Ajout de contype et conaffinity pour forcer la collision -->
+      <geom type="box" size="0.3 0.4 0.02" rgba="0.6 0.4 0.2 1" contype="1" conaffinity="1" />
+    </body>
+    
+    <!-- 2. La Bouteille -->
+    <!-- Position Z passée de 0.5 à 0.55 -->
+    <body name="bottle" pos="0.3 -0.0 0.55">
+      <freejoint/> 
+      <!-- Ajout de contype et conaffinity -->
+      <geom type="cylinder" size="0.03 0.08" rgba="0 0 1 0.5" mass="0.1" contype="1" conaffinity="1" />
+    </body>
+  </worldbody>
+</mujoco>
